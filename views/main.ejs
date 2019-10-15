@@ -1,0 +1,22 @@
+<% include ./partials/header %>
+<div class="container">
+    <div class="jumbotron">
+      <h2>AIR POLLUTION</h2>
+      <p style="opacity: .7;">Air pollution is a type of environmental pollution that affects the air and is usually caused by smoke  or other harmful gases, mainly oxides of carbon, Sulphur and Nitrogen</p>
+      <p style="opacity: .7;">In other words, air pollution is the contamination of air due to the presence or introduction of a substance which has a poisonous effect.</p>
+      <p><a href="" class="btn btn-primary">Learn More</a></p>
+    </div>
+</div>
+
+<div class="container" id="photos">
+  <div class="row" style="flex-wrap: wrap">
+    <% data.forEach(function(photo){ %>
+      <div class="col s12 m6 l4">
+        <a href=<%= photo %> data-lightbox=<%= photo %> ><img id="Img" src=<%= photo %>></a>
+      </div>
+    <% }); %>
+    </div>
+</div>
+
+
+<% include ./partials/footer %>
